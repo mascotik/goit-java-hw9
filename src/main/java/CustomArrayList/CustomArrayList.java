@@ -1,7 +1,5 @@
 package CustomArrayList;
 
-import java.util.ArrayList;
-
 public class CustomArrayList {
     private final int INIT_SIZE = 16;
     private Object[] array = new Object[INIT_SIZE];
@@ -18,7 +16,6 @@ public class CustomArrayList {
             System.arraycopy(array, index + 1, array, index, size - index);
         array[size--] = null;
     }
-
 
     public void clear() {
         array = new Object[INIT_SIZE];
